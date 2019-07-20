@@ -13,7 +13,6 @@
           data-size="invisible">
     </div>
 
-    
   </div>
 </template>
 
