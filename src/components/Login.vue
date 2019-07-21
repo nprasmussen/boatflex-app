@@ -18,7 +18,6 @@
 
 <script lang="ts">
 import firebase from 'firebase';
-import VueRecaptcha from 'vue-recaptcha';
 
 export default {
   name: 'login',
@@ -29,7 +28,6 @@ export default {
       phoneNumber: ''
     };
   },
-  components: { VueRecaptcha },
   methods: {
     login: function() {
       firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(

@@ -1,14 +1,20 @@
 <template>
-  <div id="app">
+  <div id="app" v-bind:class="{ open: isOpen }"> 
     <div id="nav">
-      <router-link to="/">Home</router-link>
-      <router-link to="/access">Adgang</router-link>
-      <router-link to="/motor">Motor</router-link>
-      <router-link to="/sails">Sejl</router-link>
-      <router-link to="/contact">Kontakt</router-link>
-      <button @click="logout">Log out</button>
+      <div>
+        <router-link to="/">Home</router-link>
+        <router-link to="/access">Adgang</router-link>
+        <router-link to="/motor">Motor</router-link>
+        <router-link to="/sails">Sejl</router-link>
+        <router-link to="/contact">Kontakt</router-link>
+        <button @click="logout">Log out</button>
+      </div>
     </div>
-    <router-view/>
+    <div>
+      <button @click="toggleMenu"></button>
+      <router-view/>
+    </div>
+    
   </div>
 </template>
 
@@ -16,11 +22,20 @@
   import firebase from 'firebase';
   export default {
     name: 'home',
+    data() {
+      return {
+        isOpen: true,
+      }
+    },
     methods: {
       logout: function() {
         firebase.auth().signOut().then(() => {
           this.$router.replace('home')
         })
+      },
+      toggleMenu: function() {
+        console.log(this.isOpen);
+        this.isOpen = !this.isOpen;
       }
     }
   }
@@ -38,7 +53,10 @@ body {
   text-align: center;
   color: #2c3e50;
   display: grid;
-  grid-template-columns: 140px auto;
+  grid-template-columns: 0px auto;
+}
+#app.open {
+  grid-template-columns: 200px auto;
 }
 #nav {
   background-color: aqua;
