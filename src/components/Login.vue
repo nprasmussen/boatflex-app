@@ -26,14 +26,13 @@ export default {
     return {
       email: '',
       password: '',
-      phoneNumber: '',
     };
   },
   methods: {
     login(): void {
       firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(
         (user) => {
-          this.$router.replace('access');
+          this.$router.replace('adgang');
         },
         (err) => {
           alert('Oops. ' + err.message);
