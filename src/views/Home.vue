@@ -3,6 +3,36 @@
     <h1>Sylvester</h1>
     <p>Velkommen ombord på Sylvester</p>
     <p>Hvis du har lejet båden kan du finde koden til låsen <router-link to="/access">her</router-link></p>
+
+    <p>Velkommen ombord på Sylvester</p>
+    <p>Hvis du har lejet båden kan du finde koden til låsen <router-link to="/access">her</router-link></p>
+    <p>Velkommen ombord på Sylvester</p>
+    <p>Hvis du har lejet båden kan du finde koden til låsen <router-link to="/access">her</router-link></p>
+    <p>Velkommen ombord på Sylvester</p>
+    <p>Hvis du har lejet båden kan du finde koden til låsen <router-link to="/access">her</router-link></p>
+    <p>Velkommen ombord på Sylvester</p>
+    <p>Hvis du har lejet båden kan du finde koden til låsen <router-link to="/access">her</router-link></p>
+    <p>Velkommen ombord på Sylvester</p>
+    <p>Hvis du har lejet båden kan du finde koden til låsen <router-link to="/access">her</router-link></p>
+    <p>Velkommen ombord på Sylvester</p>
+    <p>Hvis du har lejet båden kan du finde koden til låsen <router-link to="/access">her</router-link></p>
+    <p>Velkommen ombord på Sylvester</p>
+    <p>Hvis du har lejet båden kan du finde koden til låsen <router-link to="/access">her</router-link></p>
+    <p>Velkommen ombord på Sylvester</p>
+    <p>Hvis du har lejet båden kan du finde koden til låsen <router-link to="/access">her</router-link></p>
+    <p>Velkommen ombord på Sylvester</p>
+    <p>Hvis du har lejet båden kan du finde koden til låsen <router-link to="/access">her</router-link></p>
+    <p>Velkommen ombord på Sylvester</p>
+    <p>Hvis du har lejet båden kan du finde koden til låsen <router-link to="/access">her</router-link></p>
+    <p>Velkommen ombord på Sylvester</p>
+    <p>Hvis du har lejet båden kan du finde koden til låsen <router-link to="/access">her</router-link></p>
+    <p>Velkommen ombord på Sylvester</p>
+    <p>Hvis du har lejet båden kan du finde koden til låsen <router-link to="/access">her</router-link></p>
+    <p>Velkommen ombord på Sylvester</p>
+    <p>Hvis du har lejet båden kan du finde koden til låsen <router-link to="/access">her</router-link></p>
+    <p>Velkommen ombord på Sylvester</p>
+    <p>Hvis du har lejet båden kan du finde koden til låsen <router-link to="/access">her</router-link></p>
+    
   </div>
 </template>
 
@@ -17,3 +47,9 @@ import { Component, Vue } from 'vue-property-decorator';
 // })
 export default class Home extends Vue {}
 </script>
+
+<style>
+.home {
+  padding-bottom: 100px;
+}
+</style>
