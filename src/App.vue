@@ -25,20 +25,19 @@
     data() {
       return {
         isOpen: true,
-      }
+      };
     },
     methods: {
-      logout: function() {
+      logout() {
         firebase.auth().signOut().then(() => {
-          this.$router.replace('home')
-        })
+          this.$router.replace('home');
+        });
       },
-      toggleMenu: function() {
-        console.log(this.isOpen);
+      toggleMenu() {
         this.isOpen = !this.isOpen;
-      }
-    }
-  }
+      },
+    },
+  };
 </script>
 
 <style>

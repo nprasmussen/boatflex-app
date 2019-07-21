@@ -25,23 +25,22 @@ export default {
     return {
       email: '',
       password: '',
-      phoneNumber: ''
+      phoneNumber: '',
     };
   },
   methods: {
-    login: function() {
+    login(): void {
       firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(
         (user) => {
-          alert('Well done ! You are now connected');
-          this.$router.replace('access')
+          this.$router.replace('access');
         },
-        function(err) {
-          alert('Oops. ' + err.message)
-        }
-      )
-    }
-  }
-}
+        (err) => {
+          alert('Oops. ' + err.message);
+        },
+      );
+    },
+  },
+};
 </script>
 <style>
 input {

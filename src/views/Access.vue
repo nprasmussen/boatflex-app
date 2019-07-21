@@ -31,28 +31,28 @@ export default {
   name: 'db',
   data() {
     return {
-      pinCodes: Array
+      pinCodes: Array,
     };
   },
   computed: {
-    // a computed getter
-    currentPin: function () {
-      return this.pinCodes[0].pin.split('');
-    }
+    currentPin() {
+      const splitCode = this.pinCodes[0].pin.split('');
+      return splitCode;
+    },
   },
   firestore: {
-    pinCodes: db.collection('pinCode').orderBy('createdAt', "desc"),
+    pinCodes: db.collection('pinCode').orderBy('createdAt', 'desc'),
   },
-  methods: {
-    addPin: function(pin) {
-      db.collection('pinCode')
-        .add({
-        pin: ""+this.pin0+this.pin1+this.pin2+this.pin3,
-        createdAt: firebase.firestore.FieldValue.serverTimestamp(),
-      })
-    }
-  }
-}
+  // methods: {
+  //   addPin: function(pin) {
+  //     db.collection('pinCode')
+  //       .add({
+  //       pin: ""+this.pin0+this.pin1+this.pin2+this.pin3,
+  //       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+  //     })
+  //   }
+  // }
+};
 </script>
 <style>
 input {
