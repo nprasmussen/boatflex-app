@@ -1,17 +1,13 @@
 <template>
-  <div id="app" v-bind:class="{ open: isOpen }"> 
+  <div id="app"> 
     <div id="nav">
-      <div>
-        <router-link to="/">Home</router-link>
-        <router-link to="/access">Adgang</router-link>
-        <router-link to="/motor">Motor</router-link>
-        <router-link to="/sails">Sejl</router-link>
-        <router-link to="/contact">Kontakt</router-link>
-        <button @click="logout">Log out</button>
-      </div>
+      <router-link to="/">⛵️</router-link>
+      <router-link to="/access">🔐</router-link>
+      <router-link to="/motor">💡</router-link>
+      <router-link to="/sails">📞</router-link>
+      <button @click="logout">Log out</button>
     </div>
     <div>
-      <button @click="toggleMenu"></button>
       <router-view/>
     </div>
     
@@ -22,19 +18,11 @@
   import firebase from 'firebase';
   export default {
     name: 'home',
-    data() {
-      return {
-        isOpen: true,
-      };
-    },
     methods: {
       logout() {
         firebase.auth().signOut().then(() => {
           this.$router.replace('home');
         });
-      },
-      toggleMenu() {
-        this.isOpen = !this.isOpen;
       },
     },
   };
@@ -51,25 +39,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  display: grid;
-  grid-template-columns: 0px auto;
-}
-#app.open {
-  grid-template-columns: 200px auto;
 }
 #nav {
   background-color: aqua;
-  padding: 3px;
   overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  border-top: 1px solid #234090;
 }
 
 #nav a {
   background-color: bisque;
-  display: block;
-  padding: 10px 30px;
+  display: inline-block;
   font-weight: bold;
   color: #2c3e50;
   margin:0;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 70px; 
+  height: 70px;
+  width: 25%;
 }
 
 #nav a.router-link-exact-active {

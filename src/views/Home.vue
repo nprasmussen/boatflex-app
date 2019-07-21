@@ -1,7 +1,8 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/> -->
+    <h1>Sylvester</h1>
+    <p>Velkommen ombord på Sylvester</p>
+    <p>Hvis du har lejet båden kan du finde koden til låsen <router-link to="/access">her</router-link></p>
   </div>
 </template>
 

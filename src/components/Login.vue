@@ -1,8 +1,11 @@
 <template>
   <div class="about">
     <h1>Login</h1>
-    <input type="text" v-model="email" placeholder="email">
-    <input type="password" v-model="password" placeholder="password">
+    <div>
+      <input type="text" v-model="email" placeholder="E-mail">
+      <input type="text" v-model="password" placeholder="Kode">
+    </div>
+    
     
     <button @click="login">Vis</button>
     
@@ -45,8 +48,10 @@ export default {
 <style>
 input {
   margin: 10px 0;
-  width: 20%;
   padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
 }
 button {
   cursor: pointer;
