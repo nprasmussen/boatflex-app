@@ -55,6 +55,7 @@ input {
   display: none;
 }
 .digit {
+  display: inline-block;
   height: 30px;
   width: 30px;
   font-weight: bold;
