@@ -16,7 +16,7 @@
     </div>
     
     <p>Start motoren</p>
-    <p>Hvis du har lejet båden kan du finde koden til låsen <router-link to="/access">her</router-link></p>
+    <p>Hvis du har lejet båden kan du finde koden til låsen <router-link to="/adgang">her</router-link></p>
   </div>
 </template>
 
