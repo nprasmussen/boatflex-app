@@ -2,7 +2,7 @@
   <div id="app"> 
     
     <div id="header">
-      <h1>Sylvester</h1>
+      <h1>Sylvester - {{ currentRouteName }}</h1>
     </div>
 
     <div class="container">
@@ -12,8 +12,8 @@
 
     <div id="nav">
       <router-link to="/">⛵️</router-link>
-      <router-link to="/access">🔐</router-link>
-      <router-link to="/motor">💡</router-link>
+      <router-link to="/adgang">🔐</router-link>
+      <router-link to="/tjekliste">✅</router-link>
       <router-link to="/sails">📞</router-link>
       <button @click="logout">Log out</button>
     </div>
@@ -24,6 +24,11 @@
   import firebase from 'firebase';
   export default {
     name: 'home',
+    computed: {
+    currentRouteName() {
+        return this.$route.name;
+      }
+    },
     methods: {
       logout() {
         firebase.auth().signOut().then(() => {
@@ -41,7 +46,7 @@ body {
 }
 
 .container {
-  padding: 10px;
+  padding: 20px 40px;
 }
 
 #app {
@@ -52,7 +57,7 @@ body {
   color: #2c3e50;
 }
 #header {
-  background-color: lightslategrey;
+  background-color: #8499b5;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -80,7 +85,7 @@ body {
 
 #nav a {
   display: inline-block;
-  background-color: lightslategrey;
+  background-color: #8499b5;
   font-weight: bold;
   color: #2c3e50;
   margin-top: 5px;

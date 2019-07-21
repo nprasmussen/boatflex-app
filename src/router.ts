@@ -13,17 +13,17 @@ const router = new Router({
       component: Home,
     },
     {
-      path: '/access',
-      name: 'access',
-      component: () => import(/* webpackChunkName: "about" */ './views/Access.vue'),
+      path: '/adgang',
+      name: 'adgang',
+      component: () => import(/* webpackChunkName: "about" */ './views/Adgang.vue'),
       meta: {
         requiresAuth: true,
       },
     },
     {
-      path: '/motor',
-      name: 'motor',
-      component: () => import(/* webpackChunkName: "about" */ './views/Motor.vue'),
+      path: '/tjekliste',
+      name: 'tjekliste',
+      component: () => import(/* webpackChunkName: "about" */ './views/Tjekliste.vue'),
     },
     {
       path: '/contact',

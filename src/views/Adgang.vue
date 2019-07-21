@@ -1,20 +1,12 @@
 <template>
-  <div class="access">
+  <div class="adgang">
     <h1>Adgang til båden</h1>
     <p>Koden til båden er</p>
-    <div>
-
-      <ul id="example-1">
-      <li v-for="pinCode in pinCodes">
-        {{ pinCode.pin }}, {{ pinCode.createdAt }}
-      </li>
-    </ul>
-      <title>{{ currentPin }}</title>
+    <div v-if="pinCodes.length">
       <input class="digit" type="number" v-model="currentPin[0]" min="0" max="9" disabled>
       <input class="digit" type="number" v-model="currentPin[1]" min="0" max="9" disabled>
       <input class="digit" type="number" v-model="currentPin[2]" min="0" max="9" disabled>
       <input class="digit" type="number" v-model="currentPin[3]" min="0" max="9" disabled>  
-      <!-- <button @click="addPin">Update pin</button> -->
     </div>
 
     
@@ -31,7 +23,7 @@ export default {
   name: 'db',
   data() {
     return {
-      pinCodes: Array,
+      pinCodes: '',
     };
   },
   computed: {
@@ -56,16 +48,21 @@ export default {
 </script>
 <style>
 input {
-  margin: 10px 10px;
   width: 20%;
   padding: 15px;
 }
+.invisible {
+  display: none;
+}
 .digit {
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
+  font-weight: bold;
+  border: 1px solid #8499b5;
+  margin: 0 5px;
+  border-radius: 5px;
   font-size: 20px;
   text-align: center;
-  padding: 5px 0 5px 10px;
 }
 button {
   cursor: pointer;
