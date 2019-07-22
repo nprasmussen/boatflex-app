@@ -9,12 +9,12 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'Intro',
       component: Home,
     },
     {
       path: '/adgang',
-      name: 'adgang',
+      name: 'Adgang',
       component: () => import(/* webpackChunkName: "about" */ './views/Adgang.vue'),
       meta: {
         requiresAuth: true,
@@ -22,7 +22,7 @@ const router = new Router({
     },
     {
       path: '/tjekliste',
-      name: 'tjekliste',
+      name: 'Tjekliste',
       component: () => import(/* webpackChunkName: "about" */ './views/Tjekliste.vue'),
     },
     {
