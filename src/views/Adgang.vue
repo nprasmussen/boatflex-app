@@ -9,7 +9,12 @@
       <input class="digit" type="number" v-model="currentPin[3]" min="0" max="9" disabled>  
     </div>
 
-    
+    <h3>Nøgler og nøglekort</h3>
+    <p>I skuffen på bagbord side finder du nøglekort, 
+      som kan bruges til at benytte toiletterne på havnekontoret. Der ligger også et sæt nøgler til kistebænkene.
+    </p>
+    <img src="../../public/img/instrukser/skuffe-til-nogler.jpg" alt="">
+    <img src="../../public/img/instrukser/noglekort.jpg" alt="">
 
   </div>
 </template>

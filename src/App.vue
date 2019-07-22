@@ -13,8 +13,8 @@
       <router-link to="/">⛵️</router-link>
       <router-link to="/adgang">🔐</router-link>
       <router-link to="/tjekliste">✅</router-link>
-      <router-link to="/sails">📞</router-link>
-      <button @click="logout">Log out</button>
+      <!-- <router-link to="/sails">📞</router-link> -->
+      <!-- <button @click="logout">Log out</button> -->
     </div>
   </div>
 </template>
@@ -45,7 +45,7 @@ body {
 }
 
 .container {
-  padding: 20px 40px;
+  padding: 20px 40px 100px;
 }
 
 #app {
@@ -94,7 +94,7 @@ body {
   vertical-align: middle;
   line-height: 70px; 
   height: 70px;
-  width: 25%;
+  width: 33.3%;
 }
 
 #nav a.router-link-exact-active {
