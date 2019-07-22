@@ -32,7 +32,7 @@ export default {
     login(): void {
       firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(
         (user) => {
-          this.$router.replace('adgang');
+          this.$router.replace('/');
         },
         (err) => {
           alert('Oops. ' + err.message);
