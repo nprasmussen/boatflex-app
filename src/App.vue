@@ -9,7 +9,6 @@
       <router-view/>
     </div>
     
-
     <div id="nav">
       <router-link to="/">⛵️</router-link>
       <router-link to="/adgang">🔐</router-link>
@@ -27,7 +26,7 @@
     computed: {
     currentRouteName() {
         return this.$route.name;
-      }
+      },
     },
     methods: {
       logout() {

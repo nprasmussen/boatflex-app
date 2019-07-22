@@ -7,8 +7,6 @@ import './registerServiceWorker';
 Vue.config.productionTip = false;
 
 // Initialize Firebase
-console.log(process.env);
-
 const config = {
   apiKey: process.env.VUE_APP_FIREBASE_API_KEY,
   authDomain: process.env.VUE_APP_FIREBASE_AUTH_DOMAIN,
