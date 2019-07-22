@@ -10,8 +10,8 @@
     </div>
     
     <div id="nav">
-      <router-link to="/">⛵️</router-link>
-      <router-link to="/adgang">🔐</router-link>
+      <router-link to="/">🔐</router-link>
+      <router-link to="/intro">⛵️</router-link>
       <router-link to="/tjekliste">✅</router-link>
       <!-- <router-link to="/sails">📞</router-link> -->
       <!-- <button @click="logout">Log out</button> -->

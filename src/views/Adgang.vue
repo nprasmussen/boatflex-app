@@ -1,7 +1,6 @@
 <template>
   <div class="adgang">
-    <h1>Adgang til båden</h1>
-    <p>Koden til båden er</p>
+    <h3>Kode</h3>
     <div v-if="pinCodes.length">
       <input class="digit" type="number" v-model="currentPin[0]" min="0" max="9" disabled>
       <input class="digit" type="number" v-model="currentPin[1]" min="0" max="9" disabled>
