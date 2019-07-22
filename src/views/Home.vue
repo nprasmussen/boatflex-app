@@ -15,10 +15,20 @@
       <img src="../../public/img/instrukser/benzin-tank-ventil.jpg" alt="">
     </div>
     
-    <p>Start motoren</p>
-    <p>Før du starter motor skal du pumpe benzin ind i motoren. Det gør du på "pumpebolden" på benzinslangen. Giv den et par tryk indtil den bliver hård.</p>
+    <h3>Start motoren</h3>
+    <p>For at du starte motoren skal den sættes i RUN. Derefter pumpes benzin ind i motoren. Det gør du på "pumpebolden" på benzinslangen. Giv den et par tryk indtil den bliver hård.</p>
+    <div class="two-images">
+      <img src="../../public/img/instrukser/motor-on.jpg" alt="">
+      <img src="../../public/img/instrukser/motor-pumpe.jpg" alt="">
+    </div>
     <p>Derefter skal du trække chokeren ud. Den er helt ude når den siger 'Klik'. Til sidst skal motoren sættes i RUN.</p>
-    
+    <div class="two-images">
+      <img src="../../public/img/instrukser/motor-choker-ind.jpg" alt="">
+      <img src="../../public/img/instrukser/motor-choker-ud.jpg" alt="">
+    </div>
+
+      
+
     <router-link to="/adgang">her</router-link>
   </div>
 </template>
